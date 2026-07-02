@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Mobil Ku — Sewa Mobil Terpercaya</title>
+  <meta name="description" content="Rental mobil terpercaya dengan armada lengkap. Harga transparan, proses mudah, langsung booking via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" aria-label="Rental Mobil Ku — Beranda">
+        <span class="logo-icon" aria-hidden="true">🚗</span>
+        <span>Rental<strong>MobilKu</strong></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#fleet">Armada</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#testimonial">Testimoni</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="admin/login.php" class="nav-admin-link" title="Panel Admin">🔐 Admin</a></li>
+      </ul>
+      <a href="#fleet" class="btn btn-primary btn-sm nav-cta">Booking Sekarang</a>
+      <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#fleet">Armada</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#testimonial">Testimoni</a>
+      <a href="#faq">FAQ</a>
+      <a href="admin/login.php">🔐 Admin</a>
+      <a href="#fleet" class="btn btn-primary">Booking Sekarang</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="beranda" aria-label="Hero — Selamat datang">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">✦ Terpercaya sejak 2018 · Wonosobo & Sekitarnya</p>
+        <h1 class="hero-headline">
+          Perjalanan Nyaman<br />
+          <em>Dimulai dari Sini</em>
+        </h1>
+        <p class="hero-sub">
+          Armada terawat, harga transparan, proses booking 2 menit langsung ke WhatsApp.
+          Tidak ada biaya tersembunyi.
+        </p>
+        <div class="hero-ctas">
+          <a href="#fleet" class="btn btn-gold btn-lg">Lihat Armada →</a>
+          <a href="https://api.whatsapp.com/send?phone=6287758388616&text=Halo%2C%20saya%20ingin%20tanya%20tentang%20rental%20mobil." target="_blank" rel="noopener" class="btn btn-outline-white btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat WhatsApp
+          </a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Statistik layanan">
+          <div class="stat" role="listitem"><strong>500+</strong><span>Pelanggan Puas</span></div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" role="listitem"><strong>15+</strong><span>Armada Siap</span></div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" role="listitem"><strong>24/7</strong><span>Siap Melayani</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-mock">
+          <div class="mock-badge">⭐ 4.9 / 5.0</div>
+          <div class="mock-car-emoji">🚙</div>
+          <p class="mock-label">Toyota Innova Reborn</p>
+          <p class="mock-price">Rp 450.000 <span>/ hari</span></p>
+          <div class="mock-bar"></div>
+          <p class="mock-avail">✓ Tersedia hari ini</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 40 Q360 80 720 40 Q1080 0 1440 40 L1440 80 L0 80 Z" fill="#F8FAFF"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FLEET
+  ============================================================ -->
+  <section class="fleet section" id="fleet" aria-labelledby="fleet-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Pilihan Kendaraan</p>
+        <h2 id="fleet-heading" class="section-title">Armada Kami</h2>
+        <p class="section-sub">Dari city car hingga MPV premium — semua terawat dan siap jalan.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="fleet-filters" role="tablist" aria-label="Filter kelas kendaraan">
+        <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">Semua</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="city">City Car</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="mpv">MPV / Keluarga</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="suv">SUV / Premium</button>
+      </div>
+
+      <!-- Car Grid -->
+      <div class="fleet-grid" id="fleet-grid" role="list" aria-label="Daftar armada kendaraan">
+
+                                          <article class="car-card featured" data-category="premium" role="listitem" tabindex="0" aria-label="BMW M3, Premium · Terlaris, Rp 800.000 per hari">
+              <div class="car-badge badge-premium">Premium · Terlaris</div>
+              
+                              <img src="assets/images/cars/1782831379_images (1).jpg" alt="BMW M3" class="car-image">
+              
+              <div class="car-info">
+                <h3 class="car-name">BMW M3</h3>
+                <p class="car-meta">2024 · Matic · 5 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>BMW M3 adalah ikon sedan performa tinggi yang menggabungkan kepraktisan mobil harian dengan ketangguhan mobil balap.</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 800.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-gold btn-sm book-btn"
+                  data-name="BMW M3"
+                  data-price="800000"
+                  aria-label="Booking BMW M3">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card featured" data-category="suv" role="listitem" tabindex="0" aria-label="Mitsubishi Pajero Sport, SUV Premium · Terlaris, Rp 450.000 per hari">
+              <div class="car-badge badge-suv">SUV Premium · Terlaris</div>
+              
+                              <img src="assets/images/cars/1782831497_New-Pajero-Sport-Quartz-White-Pearl.png" alt="Mitsubishi Pajero Sport" class="car-image">
+              
+              <div class="car-info">
+                <h3 class="car-name">Mitsubishi Pajero Sport</h3>
+                <p class="car-meta">2023 · Matic · 7 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>Rekomendasi mobil keluarga</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 450.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-gold btn-sm book-btn"
+                  data-name="Mitsubishi Pajero Sport"
+                  data-price="450000"
+                  aria-label="Booking Mitsubishi Pajero Sport">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card featured" data-category="premium" role="listitem" tabindex="0" aria-label="Toyota Alphard SC, Premium · Terlaris, Rp 1.500.000 per hari">
+              <div class="car-badge badge-premium">Premium · Terlaris</div>
+              
+                              <div class="car-emoji" aria-hidden="true">🚐</div>
+              
+              <div class="car-info">
+                <h3 class="car-name">Toyota Alphard SC</h3>
+                <p class="car-meta">2022 · Hybrid Matic · 7 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>Ottoman Seat</li>
+                                      <li>Captain Seat</li>
+                                      <li>Mark Levinson</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 1.500.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-gold btn-sm book-btn"
+                  data-name="Toyota Alphard SC"
+                  data-price="1500000"
+                  aria-label="Booking Toyota Alphard SC">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card " data-category="suv" role="listitem" tabindex="0" aria-label="Toyota Fortuner VRZ, SUV Premium, Rp 650.000 per hari">
+              <div class="car-badge badge-suv">SUV Premium</div>
+              
+                              <div class="car-emoji" aria-hidden="true">🏎️</div>
+              
+              <div class="car-info">
+                <h3 class="car-name">Toyota Fortuner VRZ</h3>
+                <p class="car-meta">2023 · Diesel 4×4 · 7 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>4WD</li>
+                                      <li>360° Camera</li>
+                                      <li>Head-Up Display</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 650.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-primary btn-sm book-btn"
+                  data-name="Toyota Fortuner VRZ"
+                  data-price="650000"
+                  aria-label="Booking Toyota Fortuner VRZ">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card featured" data-category="mpv" role="listitem" tabindex="0" aria-label="Toyota Innova Reborn, MPV · Terlaris, Rp 450.000 per hari">
+              <div class="car-badge badge-mpv">MPV · Terlaris</div>
+              
+                              <div class="car-emoji" aria-hidden="true">🚙</div>
+              
+              <div class="car-info">
+                <h3 class="car-name">Toyota Innova Reborn</h3>
+                <p class="car-meta">2023 · Diesel Matic · 7 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>Sunroof</li>
+                                      <li>Premium Audio</li>
+                                      <li>Full Safety</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 450.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-gold btn-sm book-btn"
+                  data-name="Toyota Innova Reborn"
+                  data-price="450000"
+                  aria-label="Booking Toyota Innova Reborn">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card " data-category="mpv" role="listitem" tabindex="0" aria-label="Toyota Avanza Veloz, MPV, Rp 350.000 per hari">
+              <div class="car-badge badge-mpv">MPV</div>
+              
+                              <div class="car-emoji" aria-hidden="true">🚙</div>
+              
+              <div class="car-info">
+                <h3 class="car-name">Toyota Avanza Veloz</h3>
+                <p class="car-meta">2023 · Matic · 7 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>Dual AC</li>
+                                      <li>Airbag 6</li>
+                                      <li>TPMS</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 350.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-primary btn-sm book-btn"
+                  data-name="Toyota Avanza Veloz"
+                  data-price="350000"
+                  aria-label="Booking Toyota Avanza Veloz">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card " data-category="city" role="listitem" tabindex="0" aria-label="Toyota Yaris GR Sport, City Car, Rp 300.000 per hari">
+              <div class="car-badge badge-city">City Car</div>
+              
+                              <div class="car-emoji" aria-hidden="true">🚗</div>
+              
+              <div class="car-info">
+                <h3 class="car-name">Toyota Yaris GR Sport</h3>
+                <p class="car-meta">2023 · Matic · 5 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>Apple CarPlay</li>
+                                      <li>Kamera Mundur</li>
+                                      <li>VSC</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 300.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-primary btn-sm book-btn"
+                  data-name="Toyota Yaris GR Sport"
+                  data-price="300000"
+                  aria-label="Booking Toyota Yaris GR Sport">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                                  <article class="car-card " data-category="city" role="listitem" tabindex="0" aria-label="Test, City Car, Rp 250.000 per hari">
+              <div class="car-badge badge-city">City Car</div>
+              
+                              <div class="car-emoji" aria-hidden="true">🚗</div>
+              
+              <div class="car-info">
+                <h3 class="car-name">Test</h3>
+                <p class="car-meta">2022 · Matic · 4 Penumpang</p>
+                
+                                <ul class="car-features" aria-label="Fitur">
+                                      <li>AC</li>
+                                  </ul>
+                              </div>
+              <div class="car-footer">
+                <div class="car-price">
+                  <span class="price-main">Rp 250.000</span>
+                  <span class="price-unit">/ hari</span>
+                </div>
+                <button class="btn btn-primary btn-sm book-btn"
+                  data-name="Test"
+                  data-price="250000"
+                  aria-label="Booking Test">
+                  Booking →
+                </button>
+              </div>
+            </article>
+                  
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KEUNGGULAN
+  ============================================================ -->
+  <section class="keunggulan section" id="keunggulan" aria-labelledby="keunggulan-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Kenapa Kami?</p>
+        <h2 id="keunggulan-heading" class="section-title">Keunggulan Kami</h2>
+      </div>
+      <div class="keunggulan-grid" role="list">
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-icon" aria-hidden="true">🔒</div>
+          <h3>Armada Bersertifikat</h3>
+          <p>Setiap kendaraan melewati inspeksi keselamatan 30 titik sebelum disewakan. KIR aktif dan asuransi all-risk.</p>
+        </div>
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-icon" aria-hidden="true">⚡</div>
+          <h3>Konfirmasi 5 Menit</h3>
+          <p>Booking via WhatsApp langsung diproses. Tidak ada formulir panjang — cukup pilih, kirim, tunggu konfirmasi.</p>
+        </div>
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-icon" aria-hidden="true">📍</div>
+          <h3>Antar-Jemput Gratis</h3>
+          <p>Kami antar kendaraan ke lokasi Anda dalam radius Wonosobo kota tanpa biaya tambahan.</p>
+        </div>
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-icon" aria-hidden="true">🕐</div>
+          <h3>Siap 24/7</h3>
+          <p>Kebutuhan mendadak? Tim kami siap menerima pesanan kapan saja, termasuk malam hari dan hari libur.</p>
+        </div>
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-icon" aria-hidden="true">💳</div>
+          <h3>Harga Transparan</h3>
+          <p>Tidak ada biaya tersembunyi. Harga yang tertera adalah harga final termasuk BBM untuk sewa dengan sopir.</p>
+        </div>
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-icon" aria-hidden="true">👨‍✈️</div>
+          <h3>Sopir Profesional</h3>
+          <p>Sopir berpengalaman, hafal rute Wonosobo-Dieng-Purwokerto, ramah, dan berpenampilan rapi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIAL
+  ============================================================ -->
+  <section class="testimonial section" id="testimonial" aria-labelledby="testimonial-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Kata Mereka</p>
+        <h2 id="testimonial-heading" class="section-title">Testimoni Pelanggan</h2>
+      </div>
+      <div class="testi-grid" role="list">
+        <blockquote class="testi-card" role="listitem">
+          <div class="testi-stars" aria-label="Rating 5 bintang">★★★★★</div>
+          <p>"Booking mudah banget, langsung WA dan langsung direspon. Mobilnya bersih dan wangi. Sopirnya juga sangat ramah dan hafal jalan di Wonosobo. Pasti repeat order!"</p>
+          <footer>
+            <strong>Budi Santoso</strong>
+            <span>Sewa Innova ke Dieng, Mei 2025</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testi-card" role="listitem">
+          <div class="testi-stars" aria-label="Rating 5 bintang">★★★★★</div>
+          <p>"Harganya sesuai yang di website, tidak ada biaya tambahan dadakan. Antar-jemput ke hotel gratis. Pengalaman yang sangat menyenangkan untuk liburan keluarga kami."</p>
+          <footer>
+            <strong>Siti Rahayu</strong>
+            <span>Sewa Avanza keluarga, April 2025</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testi-card" role="listitem">
+          <div class="testi-stars" aria-label="Rating 5 bintang">★★★★★</div>
+          <p>"Sewa Fortuner untuk acara kantor, kondisi mobilnya seperti baru. Koordinasi sangat profesional. Akan saya rekomendasikan ke rekan-rekan saya."</p>
+          <footer>
+            <strong>Ahmad Rizki</strong>
+            <span>Sewa Fortuner corporate trip, Maret 2025</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="faq section" id="faq" aria-labelledby="faq-heading">
+    <div class="container faq-container">
+      <div class="section-header">
+        <p class="section-eyebrow">Pertanyaan Umum</p>
+        <h2 id="faq-heading" class="section-title">FAQ</h2>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+            Apa saja dokumen yang diperlukan untuk sewa lepas kunci?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-1" hidden>
+            <p>Untuk sewa lepas kunci, Anda perlu menyiapkan: KTP asli, SIM A yang masih berlaku, dan deposit jaminan sesuai kelas kendaraan. Fotokopi KTP dan SIM juga diperlukan sebagai arsip.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+            Apakah ada batasan jarak atau wilayah tempuh?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-2" hidden>
+            <p>Untuk sewa dalam kota Wonosobo, tidak ada batasan jarak. Untuk perjalanan luar kota (Dieng, Purwokerto, Semarang, dll.), tersedia paket khusus dengan harga yang sudah termasuk BBM untuk opsi dengan sopir. Hubungi kami via WhatsApp untuk penawaran terbaik.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+            Berapa lama minimal penyewaan?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-3" hidden>
+            <p>Minimal penyewaan adalah 12 jam untuk sewa lepas kunci, dan 10 jam untuk sewa dengan sopir. Untuk kebutuhan di bawah itu, tersedia paket hourly — silakan tanyakan langsung ke kami.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+            Bagaimana jika terjadi kerusakan atau kecelakaan?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-4" hidden>
+            <p>Semua armada kami sudah dilindungi asuransi all-risk. Dalam kejadian yang tidak diinginkan, penyewa tetap bertanggung jawab atas kerusakan akibat kelalaian sendiri sesuai nilai yang disepakati di kontrak. Detail lengkap ada di Syarat & Ketentuan sewa.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+            Apakah bisa booking untuk keesokan hari secara mendadak?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-5" hidden>
+            <p>Bisa! Tim kami siap 24 jam. Untuk ketersediaan armada di hari yang sama atau keesokan hari, silakan langsung hubungi via WhatsApp dan kami akan informasikan segera.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SYARAT & KETENTUAN
+  ============================================================ -->
+  <section class="sk section" id="sk" aria-labelledby="sk-heading">
+    <div class="container sk-container">
+      <h2 id="sk-heading" class="sk-title">Syarat &amp; Ketentuan Ringkas</h2>
+      <div class="sk-grid" role="list">
+        <div class="sk-item" role="listitem"><span class="sk-num" aria-hidden="true">01</span><p>Penyewa wajib menunjukkan KTP asli dan SIM A yang masih berlaku.</p></div>
+        <div class="sk-item" role="listitem"><span class="sk-num" aria-hidden="true">02</span><p>Deposit jaminan wajib dibayarkan sebelum kendaraan diserahkan.</p></div>
+        <div class="sk-item" role="listitem"><span class="sk-num" aria-hidden="true">03</span><p>Kendaraan dilarang digunakan untuk kegiatan ilegal, balapan, atau di luar wilayah yang disepakati.</p></div>
+        <div class="sk-item" role="listitem"><span class="sk-num" aria-hidden="true">04</span><p>Keterlambatan pengembalian dikenakan denda per jam sesuai tarif yang berlaku.</p></div>
+        <div class="sk-item" role="listitem"><span class="sk-num" aria-hidden="true">05</span><p>BBM kembali dalam kondisi sama atau lebih penuh dari saat pengambilan.</p></div>
+        <div class="sk-item" role="listitem"><span class="sk-num" aria-hidden="true">06</span><p>Pembatalan kurang dari 24 jam sebelum waktu sewa dikenakan biaya 50% dari total sewa.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">🚗 <strong>RentalMobilKu</strong></p>
+        <p>Solusi transportasi terpercaya di Wonosobo &amp; Jawa Tengah.</p>
+        <a href="https://api.whatsapp.com/send?phone=6287758388616&text=Halo%2C%20saya%20ingin%20tanya%20tentang%20rental." target="_blank" rel="noopener" class="footer-wa">
+          📱 087758388616
+        </a>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <strong>Navigasi</strong>
+        <a href="#fleet">Armada</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#testimonial">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sk">Syarat &amp; Ketentuan</a>
+      </nav>
+      <div class="footer-operational">
+        <strong>Jam Operasional</strong>
+        <p>Senin – Jumat: 07.00 – 21.00</p>
+        <p>Sabtu – Minggu: 07.00 – 20.00</p>
+        <p>WhatsApp: <em>24 jam</em></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 RentalMobilKu. Dibuat dengan ❤ di Wonosobo.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING WA BUTTON
+  ============================================================ -->
+  <a href="https://api.whatsapp.com/send?phone=6287758388616&text=Halo%2C%20saya%20ingin%20tanya%20tentang%20rental%20mobil."
+     class="wa-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Chat WhatsApp kami sekarang">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-float-pulse" aria-hidden="true"></span>
+  </a>
+
+  <!-- ============================================================
+       BOOKING MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Tutup modal booking">✕</button>
+
+      <!-- Step 1: Form -->
+      <div class="modal-step" id="step-1">
+        <div class="modal-header">
+          <p class="modal-eyebrow">Formulir Booking</p>
+          <h3 id="modal-title" class="modal-title">Isi Detail Sewa</h3>
+          <p class="modal-car-selected" id="modal-car-name">–</p>
+        </div>
+
+        <div class="modal-form">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap <span aria-hidden="true">*</span></label>
+            <input type="text" id="nama" name="nama" placeholder="cth: Budi Santoso" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="no-hp">Nomor WhatsApp <span aria-hidden="true">*</span></label>
+            <input type="tel" id="no-hp" name="no-hp" placeholder="cth: 08123456789" required autocomplete="tel" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tgl-mulai">Tanggal Mulai <span aria-hidden="true">*</span></label>
+              <input type="date" id="tgl-mulai" name="tgl-mulai" required />
+            </div>
+            <div class="form-group">
+              <label for="jam-mulai">Jam Penjemputan <span aria-hidden="true">*</span></label>
+              <input type="time" id="jam-mulai" name="jam-mulai" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tgl-selesai">Tanggal Selesai <span aria-hidden="true">*</span></label>
+              <input type="date" id="tgl-selesai" name="tgl-selesai" required />
+            </div>
+            <div class="form-group">
+              <label for="jam-selesai">Jam Pengembalian <span aria-hidden="true">*</span></label>
+              <input type="time" id="jam-selesai" name="jam-selesai" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Opsi Sewa <span aria-hidden="true">*</span></label>
+            <div class="radio-group" role="radiogroup" aria-label="Pilihan opsi sewa">
+              <label class="radio-option" tabindex="0">
+                <input type="radio" name="opsi" value="Lepas Kunci" checked />
+                <span class="radio-box">
+                  <strong>🔑 Lepas Kunci</strong>
+                  <small>Anda mengemudi sendiri</small>
+                </span>
+              </label>
+              <label class="radio-option" tabindex="0">
+                <input type="radio" name="opsi" value="Dengan Sopir" />
+                <span class="radio-box">
+                  <strong>👨‍✈️ Dengan Sopir</strong>
+                  <small>Sopir profesional kami</small>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="lokasi">Lokasi Penjemputan</label>
+            <input type="text" id="lokasi" name="lokasi" placeholder="cth: Hotel Dafam Wonosobo / Alamat rumah" />
+          </div>
+          <div class="form-group">
+            <label for="catatan">Catatan Tambahan</label>
+            <textarea id="catatan" name="catatan" rows="3" placeholder="Tujuan perjalanan, kebutuhan khusus, dll."></textarea>
+          </div>
+          <button class="btn btn-gold btn-full" id="btn-preview" type="button">
+            Lihat Ringkasan Pesanan →
+          </button>
+          <p class="form-note" role="alert" id="form-error" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <!-- Step 2: Preview (WA-style summary) -->
+      <div class="modal-step" id="step-2" hidden>
+        <div class="modal-header">
+          <p class="modal-eyebrow">Konfirmasi Pesanan</p>
+          <h3 class="modal-title">Ringkasan Booking</h3>
+          <p class="modal-sub">Pesan ini akan dikirim ke WhatsApp kami</p>
+        </div>
+        <div class="wa-preview-bubble" aria-label="Preview pesan WhatsApp" role="region">
+          <p class="wa-preview-text" id="wa-preview-text"></p>
+          <span class="wa-preview-time" aria-hidden="true">Baru saja ✓✓</span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-outline-navy" id="btn-back" type="button">← Kembali Edit</button>
+          <a class="btn btn-whatsapp btn-lg" id="btn-send-wa" href="#" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Kirim via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

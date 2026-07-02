@@ -1,0 +1,8 @@
+{"id":"1","nama":"Test","gambar":null,"emoji":"\ud83d\ude97","status":"tersedia"}
+{"id":"2","nama":"Toyota Yaris GR Sport","gambar":null,"emoji":"\ud83d\ude97","status":"tersedia"}
+{"id":"3","nama":"Toyota Avanza Veloz","gambar":null,"emoji":"\ud83d\ude99","status":"tersedia"}
+{"id":"4","nama":"Toyota Innova Reborn","gambar":null,"emoji":"\ud83d\ude99","status":"tersedia"}
+{"id":"5","nama":"Toyota Fortuner VRZ","gambar":null,"emoji":"\ud83c\udfce\ufe0f","status":"tersedia"}
+{"id":"6","nama":"Toyota Alphard SC","gambar":null,"emoji":"\ud83d\ude90","status":"tersedia"}
+{"id":"7","nama":"Mitsubishi Pajero Sport","gambar":"1782831497_New-Pajero-Sport-Quartz-White-Pearl.png","emoji":"\ud83d\ude99","status":"tersedia"}
+{"id":"8","nama":"BMW M3","gambar":"1782831379_images (1).jpg","emoji":"\ud83d\ude99","status":"tersedia"}
